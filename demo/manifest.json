@@ -1,0 +1,15 @@
+{
+  "name": "Screenshot Extension",
+  "version": "1.0",
+  "description": "This extension takes a screenshot of the screen whenever the mouse is clicked anywhere on screen.",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "poup.html"
+  }
+}
